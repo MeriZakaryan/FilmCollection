@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Films</title>
+</head>
+<body>
+    <div class="menu-line">
+        <div class="logo"></div>
+            <div class="search">
+                <input type="text" class="search-input">
+                <button class="search-btn" onclick="searchFilm()"><i class="fas fa-search"></i></button>
+             </div>
+             <div class="genre-btn">
+                 <button class="down" onclick="openGenres()"><i class="fas fa-sort-down"></i></button>
+                 <button class="up" onclick="closeGenres()"><i class="fas fa-sort-up"></i></button>
+            </div>  
+    </div>
+    <div class="main"></div>
+        <div class="obj-name"></div>
+        <div class="genres-block">
+            <button>Action</button>
+            <button>Adventure</button>
+            <button>Animation</button>
+            <button>Biography</button>
+            <button>Comedy</button>
+            <button>Crime</button>
+            <button>Documentary</button>
+            <button>Drama</button>
+            <button>Family</button>
+            <button>Fantasy</button>
+            <button>Film Noir</button>
+            <button>History</button>
+            <button>Horror</button>
+            <button>Music</button>
+            <button>Musical</button>
+            <button>Mystery</button>
+            <button>Romance</button>
+            <button>Sci-Fi</button>
+            <button>Short</button>
+            <button>Sport</button>
+            <button>Superhero</button>
+            <button>Thriller</button>
+            <button>War</button>
+            <button>Western</button>
+        </div>
+        <div class="container">
+            <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>      
+            <div class="movies-list"></div>
+        </div>
+        <div class="pagination">
+            <button class="first-page" ><i class="fas fa-angle-double-left"></i></button>
+            <div class="pages">
+                <div class="btn-list"></div>
+            </div>
+            <button class="last-page"><i class="fas fa-angle-double-right"></i></button>
+        </div>
+    </div>
+    <script src="./request.js"></script>
+</body>
+</html>

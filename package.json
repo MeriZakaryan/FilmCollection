@@ -1,0 +1,11 @@
+{
+  "name": "filmcollection",
+  "version": "1.0.0",
+  "description": "Filmes",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./cardBlocks/request.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
